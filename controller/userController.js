@@ -244,14 +244,15 @@ const deleteUser = (req, res) => {
 
 //show captcha value in console
 const showCaptcha = (req, res, next) => {
-  console.log(req.session.captcha);
+  // console.log(req.session.captcha);
+  console.log("captcha")
 };
-// Generate captcha and store in session
-const generateCaptcha = (req, res) => {
-  const captcha = svgCaptcha.create();
-  req.session.captcha = captcha.text;
-  res.type("svg").send(captcha.data);
-};
+// // Generate captcha and store in session
+// const generateCaptcha = (req, res) => {
+//   const captcha = svgCaptcha.create();
+//   req.session.captcha = captcha.text;
+//   res.type("svg").send(captcha.data);
+// };
 
 // Create a nodemailer transporter
 const transporter = nodemailer.createTransport({
