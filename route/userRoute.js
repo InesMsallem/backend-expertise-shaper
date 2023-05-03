@@ -15,7 +15,6 @@ router.put("/updateUser/:userId",  userController.updateUser);
 router.post("/signup", userController.signup);
 router.post("/login", userController.login);
 router.get("/ShowSessionCaptcha", userController.showCaptcha);
-router.get("/generateCaptcha", userController.generateCaptcha);
 router.post("/forgot-password", userController.forgotPassword);
 router.post("/reset-password/:resetToken", userController.resetPassword);
 router.get("/verify/:userId/:uniqueString", userController.verifyUserEmail);
