@@ -883,7 +883,7 @@ module.exports = {
   signup,
   login,
   deleteUser,
-  generateCaptcha,
+  // generateCaptcha,
   showCaptcha,
   forgotPassword,
   resetPassword,
