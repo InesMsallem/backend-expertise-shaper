@@ -23,11 +23,12 @@ require("dotenv").config();
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL, process.env.FRONTEND_URL_HOSTNAME, process.env.DASHBOARD_URL, process.env.DASHBOARD_URL_HOSTNAME],
+    origin: ["https://your-app-name.netlify.app"],
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
 );
+
 
 // configure session middleware
 
