@@ -23,7 +23,7 @@ require("dotenv").config();
 
 app.use(
   cors({
-    origin: ["https://645298db4ceffe446ecf03c9--expertise-shaper.netlify.app"],
+    origin: ["https://6452d32a2f7fed0075d13b02--expertiseshaper.netlify.app"],
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
